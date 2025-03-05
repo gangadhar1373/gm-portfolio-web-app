@@ -1,10 +1,15 @@
 import styled from 'styled-components';
+import { NavLink } from 'react-router';
 
 const HeaderWrapper = styled.header`
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  z-index: 1000;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 0.5px;
   a {
     text-decoration: none;
     color: black;
@@ -14,18 +19,28 @@ const HeaderWrapper = styled.header`
 const Nav = styled.nav`
   border: 1px solid black;
   border-radius: 25px;
-
+  background: rgb(228, 238, 245);
   ul {
     padding: 0px 25px;
     display: flex;
     list-style: none;
     gap: 1rem;
   }
-  a {
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-    padding: 0.75rem;
+  li {
+    a {
+      text-decoration: none;
+      color: black;
+      cursor: pointer;
+      padding: 0.75rem;
+      &:hover {
+        background: rgb(246, 181, 199);
+        border-radius: 25px;
+      }
+    }
+    a.active {
+      background: rgb(246, 181, 199);
+      border-radius: 25px;
+    }
   }
 `;
 
@@ -35,22 +50,22 @@ export const Header = () => {
       <Nav>
         <ul>
           <li>
-            <a href='#'>Home</a>
+            <NavLink to='/'>Home</NavLink>
           </li>
           <li>
-            <a href='#'>About</a>
+            <NavLink to='/about'>About</NavLink>
           </li>
           <li>
-            <a href='#'>Projects</a>
+            <NavLink to='/projects'>Projects</NavLink>
           </li>
           <li>
-            <a href='#'>Skills</a>
+            <NavLink to='/skills'>Skills</NavLink>
           </li>
           <li>
-            <a href='#'>Experience</a>
+            <NavLink to='/experience'>Experience</NavLink>
           </li>
           <li>
-            <a href='#'>Contact</a>
+            <NavLink to='/contact'>Contact</NavLink>
           </li>
         </ul>
       </Nav>
