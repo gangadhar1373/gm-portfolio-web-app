@@ -1,5 +1,7 @@
+import { Wrapper } from './shared/Wrapper';
+
 const Contact = () => {
-  return <div>Contact</div>;
+  return <Wrapper>Contact</Wrapper>;
 };
 
 export default Contact;

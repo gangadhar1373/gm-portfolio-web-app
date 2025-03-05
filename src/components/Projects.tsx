@@ -1,5 +1,7 @@
+import { Wrapper } from './shared/Wrapper';
+
 const Projects = () => {
-  return <div>Projects</div>;
+  return <Wrapper>Projects</Wrapper>;
 };
 
 export default Projects;

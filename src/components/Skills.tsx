@@ -1,5 +1,6 @@
+import { Wrapper } from './shared/Wrapper';
 const Skills = () => {
-  return <div>Skills</div>;
+  return <Wrapper>Skills</Wrapper>;
 };
 
 export default Skills;

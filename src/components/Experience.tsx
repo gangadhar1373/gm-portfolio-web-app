@@ -1,5 +1,7 @@
+import { Wrapper } from './shared/Wrapper';
+
 const Experience = () => {
-  return <div>Experience</div>;
+  return <Wrapper>Experience</Wrapper>;
 };
 
 export default Experience;
